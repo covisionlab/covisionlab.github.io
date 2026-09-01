@@ -258,9 +258,18 @@ a {
 }
 
 .button-primary {
+  width: min(100%, 260px);
+  justify-content: space-between;
   color: var(--ink);
   background: var(--lime);
+  white-space: nowrap;
   animation: rise-in 700ms 320ms ease-out both;
+}
+
+.button-primary span {
+  flex: 0 0 auto;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .button-primary:hover,
@@ -312,6 +321,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: clamp(80px, 11vw, 150px) clamp(24px, 5vw, 76px);
+  scroll-margin-top: var(--header-height);
 }
 
 .section-heading {
@@ -471,6 +481,42 @@ a {
   background: var(--lime);
   border-color: var(--lime);
 }
+
+.cover-fungi {
+  background: #176b51;
+}
+
+.segmentation-map {
+  position: absolute;
+  top: 58px;
+  right: -25px;
+  width: 285px;
+  height: 230px;
+  background: #0c3027;
+  transform: rotate(8deg);
+}
+
+.segmentation-map i {
+  position: absolute;
+  display: block;
+  border-radius: 50% 50% 28% 28%;
+}
+
+.segmentation-map i::after {
+  position: absolute;
+  top: 72%;
+  left: 42%;
+  width: 16%;
+  height: 55%;
+  content: "";
+  background: inherit;
+}
+
+.segmentation-map i:nth-child(1) { top: 28px; left: 30px; width: 92px; height: 68px; background: var(--lime); }
+.segmentation-map i:nth-child(2) { top: 48px; right: 24px; width: 76px; height: 55px; background: #ff746c; }
+.segmentation-map i:nth-child(3) { top: 128px; left: 92px; width: 100px; height: 70px; background: var(--cyan); }
+.segmentation-map i:nth-child(4) { bottom: 20px; left: 22px; width: 55px; height: 44px; background: #ffca4b; }
+.segmentation-map i:nth-child(5) { right: 15px; bottom: 13px; width: 62px; height: 48px; background: var(--violet); }
 
 .diffusion-grid {
   position: absolute;
@@ -882,6 +928,11 @@ a {
   .hero-copy {
     margin: 25px 0 28px;
     font-size: 17px;
+  }
+
+  .button-primary {
+    width: 100%;
+    max-width: 320px;
   }
 
   .hero-index {

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="White papers and applied research from Covision Lab in computer vision, AI, and 3D sensing.">
+    <meta name="theme-color" content="#111111">
+    <title>White Papers | Covision Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Covision Lab white papers home">
+        <img class="brand-mark" src="assets/covision-icon.svg" alt="" width="32" height="32">
+        <span class="brand-name">Covision Lab</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#papers">White papers</a>
+        <a href="#about">About</a>
+        <a href="https://www.covisionlab.com/research">Research</a>
+        <a class="nav-cta" href="https://www.covisionlab.com/contact?subject=research">Collaborate</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-image" role="img" aria-label="Covision Lab headquarters in Brixen"></div>
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Knowledge / Applied research</p>
+          <h1>Ideas built to<br><span>be applied.</span></h1>
+          <p class="hero-copy">Explore practical research from the intersection of computer vision, artificial intelligence, and industry.</p>
+          <a class="button button-primary" href="#papers">Browse white papers <span aria-hidden="true">&darr;</span></a>
+        </div>
+        <div class="hero-index" aria-label="Archive statistics">
+          <div><strong>04</strong><span>Research papers</span></div>
+          <div><strong>04</strong><span>Focus areas</span></div>
+          <div><strong>2020-26</strong><span>Archive</span></div>
+        </div>
+      </section>
+
+      <section class="library" id="papers">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">Research archive</p>
+            <h2>White papers</h2>
+          </div>
+          <p>Research shaped by real industrial challenges and shared for the wider computer vision community.</p>
+        </div>
+
+        <div class="catalog-tools" aria-label="Paper filters">
+          <label class="search-field">
+            <span class="sr-only">Search white papers</span>
+            <span aria-hidden="true">&#8981;</span>
+            <input id="paper-search" type="search" placeholder="Search titles, authors or topics" autocomplete="off">
+          </label>
+          <div class="filters" role="group" aria-label="Filter by research area">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="edge-ai" aria-pressed="false">Edge AI</button>
+            <button class="filter-button" type="button" data-filter="deep-learning" aria-pressed="false">Deep learning</button>
+            <button class="filter-button" type="button" data-filter="industrial-vision" aria-pressed="false">Industrial vision</button>
+            <button class="filter-button" type="button" data-filter="3d-sensing" aria-pressed="false">3D sensing</button>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite">Showing 4 papers</p>
+
+        <div class="paper-list" id="paper-list">
+          <article class="paper" data-category="edge-ai industrial-vision" data-search="npu hardware evaluation comparative study edge ai inference accelerators davide baltieri tobia peruzzi asic soc dsp integrated npu hailo axelera edgecortix qualcomm intel amd nvidia 2026">
+            <div class="paper-cover cover-npu" aria-hidden="true">
+              <span class="cover-number">01</span>
+              <div class="chip-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="cover-label">NPU<br>evaluation</span>
+            </div>
+            <div class="paper-content">
+              <div class="paper-meta"><span>White paper</span><time datetime="2026-07-22">2026</time><span>14 pages</span></div>
+              <h3>NPU Hardware Evaluation: A Comparative Study of Edge AI Inference Accelerators</h3>
+              <p>A systematic evaluation of ten edge AI accelerators across ASIC NPUs, SoC DSPs, and integrated NPUs, benchmarked on throughput, latency, compatibility, power efficiency, SDK maturity, and product lifecycle.</p>
+              <p class="authors">D. Baltieri &middot; T. Peruzzi</p>
+              <div class="paper-actions">
+                <a class="text-link" href="papers/npu-hardware-evaluation-v1.0.pdf" download>Download PDF <span aria-hidden="true">&darr;</span></a>
+                <a class="button button-dark" href="papers/npu-hardware-evaluation-v1.0.pdf" target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">&nearr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper" data-category="deep-learning industrial-vision" data-search="bounding box guided diffusion synthesizing industrial images segmentation map simoni pelosin synthetic data cvpr 2025">
+            <div class="paper-cover cover-diffusion" aria-hidden="true">
+              <span class="cover-number">02</span>
+              <div class="diffusion-grid"></div>
+              <span class="cover-label">Synthetic<br>data</span>
+            </div>
+            <div class="paper-content">
+              <div class="paper-meta"><span>CVPR Workshop</span><time datetime="2025">2025</time><span>9 pages</span></div>
+              <h3>Bounding Box-Guided Diffusion for Synthesizing Industrial Images and Segmentation Map</h3>
+              <p>Conditional diffusion turns simple bounding-box annotations into diverse industrial images and segmentation maps, reducing the cost of training-data creation.</p>
+              <p class="authors">A. Simoni &middot; F. Pelosin</p>
+              <div class="paper-actions">
+                <a class="text-link" href="https://arxiv.org/abs/2505.03623">Read abstract <span aria-hidden="true">&nearr;</span></a>
+                <a class="button button-dark" href="https://arxiv.org/pdf/2505.03623" target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">&nearr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper" data-category="deep-learning industrial-vision" data-search="dynamic label injection imbalanced industrial defect segmentation caruso pelosin simoni boschetti eccv 2024">
+            <div class="paper-cover cover-defect" aria-hidden="true">
+              <span class="cover-number">03</span>
+              <div class="defect-shape"></div>
+              <span class="cover-label">Defect<br>learning</span>
+            </div>
+            <div class="paper-content">
+              <div class="paper-meta"><span>ECCV Workshop</span><time datetime="2024">2024</time><span>15 pages</span></div>
+              <h3>Dynamic Label Injection for Imbalanced Industrial Defect Segmentation</h3>
+              <p>A dynamic rebalancing method injects rare defect classes during training to improve semantic segmentation under severe industrial data imbalance.</p>
+              <p class="authors">E. Caruso &middot; F. Pelosin &middot; A. Simoni &middot; M. Boschetti</p>
+              <div class="paper-actions">
+                <a class="text-link" href="https://arxiv.org/abs/2408.10031">Read abstract <span aria-hidden="true">&nearr;</span></a>
+                <a class="button button-dark" href="https://arxiv.org/pdf/2408.10031" target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">&nearr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper" data-category="3d-sensing industrial-vision" data-search="versatile multi camera system 3d acquisition modeling lanz sottsas conni boschetti nocerino menna remondino isprs 2020">
+            <div class="paper-cover cover-sensing" aria-hidden="true">
+              <span class="cover-number">04</span>
+              <div class="sensing-object"><i></i><i></i><i></i></div>
+              <span class="cover-label">3D<br>capture</span>
+            </div>
+            <div class="paper-content">
+              <div class="paper-meta"><span>ISPRS Congress</span><time datetime="2020">2020</time><span>6 pages</span></div>
+              <h3>A Versatile Multi-Camera System for 3D Acquisition and Modeling</h3>
+              <p>An integrated, repeatable multi-camera pipeline for accurate geometry and high-fidelity texture reconstruction of small and medium objects.</p>
+              <p class="authors">O. Lanz &middot; F. Sottsas &middot; M. Conni &middot; M. Boschetti &middot; et al.</p>
+              <div class="paper-actions">
+                <a class="text-link" href="https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/785/2020/">Read abstract <span aria-hidden="true">&nearr;</span></a>
+                <a class="button button-dark" href="https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/785/2020/isprs-archives-XLIII-B2-2020-785-2020.pdf" target="_blank" rel="noreferrer">Open PDF <span aria-hidden="true">&nearr;</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <strong>No papers found.</strong>
+          <p>Try another keyword or clear the active filter.</p>
+          <button class="text-link" id="clear-filters" type="button">Clear filters</button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">About Covision Lab</p>
+        <div class="about-grid">
+          <h2>Industry meets<br><span>academic research.</span></h2>
+          <div>
+            <p>Covision Lab is a computer vision and AI innovation hub in Brixen, Italy. We bring researchers and multinational technology companies together to turn ambitious ideas into robust industrial solutions.</p>
+            <a class="button button-outline" href="https://www.covisionlab.com/research">Explore our research <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img class="brand-mark brand-mark-footer" src="assets/covision-icon.svg" alt="" width="32" height="32">
+        <strong>Covision Lab</strong>
+        <p>Computer Vision &amp; AI Innovation Hub</p>
+      </div>
+      <div class="footer-column">
+        <span>Visit</span>
+        <a href="https://www.covisionlab.com/">Main website</a>
+        <a href="https://github.com/covisionlab">GitHub</a>
+        <a href="https://it.linkedin.com/company/covision-lab">LinkedIn</a>
+      </div>
+      <div class="footer-column">
+        <span>Contact</span>
+        <a href="mailto:info@covisionlab.com">info@covisionlab.com</a>
+        <p>Julius-Durst-Str. 4<br>39042 Brixen, Italy</p>
+      </div>
+      <p class="copyright">&copy; <span id="current-year">2026</span> Covision Lab. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

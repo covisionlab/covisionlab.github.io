@@ -93,16 +93,12 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
 }
 
-.brand-mark {
+.brand-logo {
   display: block;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 auto;
+  width: 126px;
+  height: auto;
 }
 
 .site-nav {
@@ -687,11 +683,10 @@ a {
   border-top: 1px solid #292929;
 }
 
-.footer-brand strong {
+.footer-logo {
   display: block;
-  margin-top: 20px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 24px;
+  width: 170px;
+  height: auto;
 }
 
 .footer-brand p,
@@ -847,8 +842,7 @@ a {
 }
 
 @media (max-width: 640px) {
-  .brand-name { font-size: 15px; }
-  .brand-mark { width: 30px; height: 30px; }
+  .brand-logo { width: 116px; }
 
   .hero {
     min-height: 760px;
